@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+
+        Employee Dashboard
+</header>
+<div class="container">
+<h2 class="title">Employee Details</h2>
+<!-- Search Box -->
+<input 
+
+            type="text" 
+
+            id="searchBox" 
+
+            class="search-box" 
+
+            placeholder="Search employees..."
+>
+<!-- Employee Table -->
+<table class="emp-table" id="empTable">
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Role</th>
+<th>Email</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>John Doe</td>
+<td>Software Engineer</td>
+<td>john@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Priya Sharma</td>
+<td>QA Analyst</td>
+<td>priya@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mahesh Kumar</td>
+<td>Team Lead</td>
+<td>mahesh@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Anita Reddy</td>
+<td>HR Manager</td>
+<td>anita@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ravi Verma</td>
+<td>UI/UX Designer</td>
+<td>ravi@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sneha Iyer</td>
+<td>Automation Tester</td>
+<td>sneha@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Vikas Singh</td>
+<td>DevOps Engineer</td>
+<td>vikas@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Meera Joseph</td>
+<td>Project Manager</td>
+<td>meera@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Arun Nair</td>
+<td>Backend Developer</td>
+<td>arun@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Lakshmi Prasad</td>
+<td>Frontend Developer</td>
+<td>lakshmi@example.com</td>
+<td>
+<img src="assets/edit.png" class="icon-btn">
+<img src="assets/delete.png" class="icon-btn">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+
+        // Search Function
+
+        document.getElementById("searchBox").addEventListener("keyup", () => {
+
+            const text = searchBox.value.toLowerCase();
+
+            const rows = document.querySelectorAll("#empTable tbody tr");
+
+            rows.forEach(row => {
+
+                row.style.display =
+
+                    row.innerText.toLowerCase().includes(text) ? "" : "none";
+
+            });
+
+        });
+</script>
+</body>
+</html>
+ 
