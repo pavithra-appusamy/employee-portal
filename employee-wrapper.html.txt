@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+       Employee Portal
+</header>
+<!-- Main container -->
+<div class="container">
+<h2 class="title">Employee Dashboard</h2>
+<!-- IFRAME -->
+<iframe
+           src="employee.html"
+           class="emp-iframe"
+           title="Employee Dashboard">
+</iframe>
+</div>
+</body>
+</html>
